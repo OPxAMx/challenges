@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Challenge 9000 000 </title>
+    <link rel="stylesheet" href="https://opxamx.github.io/challenges/challenge-9000-000/dist/style.css">
+    <link rel="stylesheet" href="https://opxamx.github.io/challenges/css/css/main.css"></style>
+    <link rel="stylesheet" href="https://opxamx.github.io/challenges/css/leaves.css"></style>
+    <script src="https://opxamx.github.io/challenges/javascript/leaves.min.js.télécharger" defer=""></script>
+    <link rel="stylesheet" href="https://opxamx.github.io/challenges/css/search.css"></style>
+    <script src="https://opxamx.github.io/challenges/javascript/search.min.js.télécharger" defer=""></script>
+    <script src="https://opxamx.github.io/challenges/javascript/navbar.min.js.télécharger" defer=""></script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="https://opxamx.github.io/challenges/challenge-9000-000/dist/script.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <a class="logo" href="#">
+            <img src="./logo.svg" type="image/svg">
+        </a>
+        <a href="https://opxamx.github.io/#/">
+            <button>🍭🍬Accueil🍫🥤</button>
+        </a>
+        <a href="https://opxamx.github.io/items/">
+            <button>Nos Muncheez</button>
+        </a>
+        <a href="https://opxamx.github.io/categories/">
+            <button>Categorie</button>
+        </a>
+        <a href="https://opxamx.github.io/challenges/">
+            <button>Challenges</button>
+        </a>
+        <a href="https://opxamx.github.io/aboutus/">
+            <button>À pr🍬pos</button>
+        </a>
+        <a href="https://opxamx.github.io/exo/">
+            <button>LABEL🔖</button>
+        </a>
+        <div class="burger"><span></span><span></span><span></span></div>
+    </nav>
+    <div class="container">
+        <h1></h1>
+        <div class="ctrl">
+            <input id="search" type="search" placeholder="Search Codebar Here..." autofocus>
+        </div>
+        <div class="result">
+                <!-- partial:index.partial.html -->
+                <div class="title">
+                    <h3>🔥DÉFI ÉPICÉ🔥<strong>9 000 000 sKO</strong></h3>
+                </div>
+                <div class="more-pens">
+                    <a target="_blank" href="https://opxamx.github.io/challenges/" class="white-mode">See 🔥THE TEDDY BEAR🔥</a>
+                    <a target="_blank" href="https://opxamx.github.io/challenges/" class="white-mode">See 🔥THE TOES OF SATAN🔥</a>
+                </div>
+             </div>
+    </div>
+<div class="mobile-drop">
+    <a href="/">
+        <button>Accueil</button>
+    </a><a href="/explore">
+        <button>Explorer</button>
+    </a><a href="/about-us">
+        <button>À propos</button>
+    </a>
+</div>
+<div class="modal-drop">
+    <div class="header"><span></span><span>Article </span><span>Quantité</span><span>Prix</span><span></span></div>
+</div>
+<div class="modal-back"></div>
+<img class="leaves" id="top-left" src="https://opxamx.github.io/exo/bRight.png" type="image/png">
+<div class="top-row"> <img class="leaves" src="https://opxamx.github.io/exo/leaf (12).svg" type="image/svg"><img class="leaves" src="https://opxamx.github.io/exo/leaf (7).svg" type="image/svg"><img class="leaves" src="https://opxamx.github.io/exo/leaf (2).svg" type="image/svg"><img class="leaves" src="https://opxamx.github.io/exo/leaf (4).svg" type="image/svg"><img class="leaves" src="https://opxamx.github.io/exo/leaf (11).svg" type="image/svg"><img class="leaves" src="https://opxamx.github.io/exo/leaf (6).svg" type="image/svg"><img class="leaves" src="https://opxamx.github.io/exo/leaf (9).svg" type="image/svg"></div>
+<img class="leaves" id="top-right" src="https://opxamx.github.io/exo/leaf (14).svg" type="image/svg">
+<img class="leaves" id="bottom-left" src="https://opxamx.github.io/exo/leaf (14).svg" type="image/svg">
+<div class="bottom-row"> <img class="leaves" src="https://opxamx.github.io/exo/leaf (12).svg" type="image/svg"><img class="leaves" src="https://opxamx.github.io/exo/leaf (7).svg" type="image/svg"><img class="leaves" src="https://opxamx.github.io/exo/leaf (2).svg" type="image/svg"><img class="leaves" src="https://opxamx.github.io/exo/leaf (4).svg" type="image/svg"><img class="leaves" src="https://opxamx.github.io/exo/leaf (11).svg" type="image/svg"><img class="leaves" src="https://opxamx.github.io/exo/leaf (6).svg" type="image/svg"><img class="leaves" src="https://opxamx.github.io/exo/leaf (9).svg" type="image/svg"></div>
+<img class="leaves" id="bottom-right" src="https://opxamx.github.io/exo/bRight.png" type="image/png">
+  </body>
+</html>
+<template id="cart-template">
+    <div class="item">
+        <img><span id="name"></span>
+        <div class="cart-quantity">
+            <input id="remove" type="image" src="/images/minus.svg"><span></span>
+            <input id="add" src="/images/plus.svg" type="image">
+        </div><span id="price"></span>
+        <input id="trash" src="/images/trash.svg" type="image">
+    </div>
+</template>
+<template id="item-template">
+    <div class="s-item">
+        <img>
+        <div class="s-footer-head"> <span id="name"></span></div>
+        <div class="s-footer-foot">
+            <span id="price"></span><a>
+                <button id="see">Voir Item</button>
+            </a>
+        </div>
+    </div>
+</template>
